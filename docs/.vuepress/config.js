@@ -3,8 +3,8 @@ const plugins = require('./config/plugins.js');
 const themeConfig = require('./config/themeConfig.js');
 
 module.exports = {
-  theme: 'vdoing', // 使用npm包主题
-  // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
+  // theme: 'vdoing', // 使用npm包主题
+  theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
   title: "Siegaii's blog",
   description: 'Siegaii博客。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。',
