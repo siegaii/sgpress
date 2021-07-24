@@ -28,7 +28,7 @@ module.exports = {
     '/img/bg6.jpeg',
     '/img/banner-img.jpeg',
   ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
-  bodyBgImgOpacity: 0.09, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
+  bodyBgImgOpacity: 0.2, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
   // titleBadge: false, // 文章标题前的图标是否显示，默认true
   // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
@@ -56,7 +56,7 @@ module.exports = {
     // 博主信息，显示在首页侧边栏
     avatar: '/img/siegaii.jpeg',
     name: 'Siegaii',
-    slogan: '前端野修',
+    slogan: '野修程序',
   },
   social: {
     // 社交图标，显示于博主信息栏和页脚栏
