@@ -16,6 +16,6 @@ module.exports = [
       },
     ],
   },
-  // { text: '开发笔记', link: '/note/' },
-  // { text: '日常', link: '/note/' },
+  { text: '开发笔记', link: '/note/' },
+  { text: '日常', link: '/live/' },
 ]

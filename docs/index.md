@@ -6,7 +6,7 @@ tagline: 天予不取反受其咎
 # actionText: 立刻进入 →
 # actionLink: /web/
 # bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
-
+# bannerBg: /img/banner-img.jpeg
 features: # 可选的
   - title: 技术文档
     details: 技术文档、教程、技巧、总结
