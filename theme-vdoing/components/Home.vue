@@ -214,7 +214,7 @@ export default {
       let bannerBg = this.homeData.bannerBg
       if (!bannerBg || bannerBg === 'auto') { // 默认
         if (this.$themeConfig.bodyBgImg) { // 当有bodyBgImg时，不显示背景
-          return ''
+          return 'letter-spacing: 2px !important;background-image: linear-gradient(90deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%),linear-gradient(360deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%) !important;background-size: 20px 20px !important;background-position: center center !important;'
         } else { // 网格纹背景
           return 'background: rgb(40,40,45) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7c6xCQAgDAVRR9A6E4hLu4uLiWJ7tSnuQcIvr2TRYsw3/zOGGEOMIcYQY4gxxBhiDDGGGEOMIcYQY4gxxBhiDLkx52W4Gn1tuslCtHJvL54AAAAASUVORK5CYII=)'
         }

@@ -31,7 +31,7 @@ export default {
           count = 0
         }
         this.bgImg = bodyBgImg[count]
-      }, 15000)
+      }, 30000)
     }
 
     if (bodyBgImgOpacity !== undefined) {
@@ -50,5 +50,10 @@ export default {
   height: 100vh;
   width: 100vw;
   transition: background 0.5s;
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: #808080;
 }
 </style>
