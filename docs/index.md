@@ -2,7 +2,7 @@
 home: true
 # heroImage: /img/web.png
 heroText: Siegaii's blog
-tagline: 天予不取反受其咎
+tagline: 天雨虽宽不润无根之草
 # actionText: 立刻进入 →
 # actionLink: /web/
 # bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
