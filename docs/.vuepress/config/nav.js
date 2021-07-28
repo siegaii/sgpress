@@ -5,17 +5,40 @@ module.exports = [
     text: '技术文档',
     link: '/technology/',
     items: [
-      { 
-        text: 'Node', 
-        items:[
+      {
+        text: 'Javascript',
+        items: [
           {
-            text: '架构', 
-            link: '/pages/d4f127/' 
+            text: 'Js 实现柯里化',
+            link: '/pages/fb08d4/'
           }
         ]
       },
-    ],
+      {
+        text: 'Node',
+        items: [
+          {
+            text: 'Node 架构',
+            link: '/pages/668df1/'
+          }
+        ]
+      }
+    ]
   },
-  { text: '开发笔记', link: '/note/' },
-  { text: '日常', link: '/live/' },
+  {
+    text: '开发笔记',
+    link: '/note/',
+    items: [
+      {
+        text: 'NPM',
+        items: [
+          {
+            text: 'NPM package.json 版本号详解',
+            link: '/pages/478dcc/'
+          }
+        ]
+      }
+    ]
+  }
+  // { text: '日常', link: '/live/' }
 ]

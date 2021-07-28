@@ -16,16 +16,19 @@ features: # 可选的
     details: 开发笔记、常见问题解法、常见坑
     link: /note/
     # imgUrl: /img/ui.png
-  - title: 日常
-    details: 读书笔记、随笔、日常复盘
-    link: /live/
+  - title: 技术文档
+    details: 技术文档、教程、技巧、总结
+    link: /technology/ # 可选
+    # imgUrl: /img/web.png # 可选
+  # - title: 日常
+  #   details: 读书笔记、随笔、日常复盘
+  #   link: /live/
     # imgUrl: /img/other.png
 
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
 # postList: detailed
 # simplePostListLength: 10 # 简约版文章列表显示的文章数量，默认10。（仅在postList设置为simple时生效）
 ---
-
 
 <!-- 小熊猫 -->
 <!-- <img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;"> -->
