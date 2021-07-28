@@ -17,7 +17,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:siegaii/siegaii.github.io.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://xugaoyi:${GITHUB_TOKEN}@github.com/siegaii/sgpress.git
+  githubUrl=https://siegaii:${GITHUB_TOKEN}@github.com/siegaii/sgpress.git
   git config --global user.name "siegaii"
   git config --global user.email "siiegaiii@gmail.com"
 fi
