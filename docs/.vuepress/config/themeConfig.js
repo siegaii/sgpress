@@ -23,10 +23,10 @@ module.exports = {
 
   bodyBgImg: [
     // https://img.xjh.me/random_img.php?ctype=acg&return=302&type=bg  神仙图片接口
-    '/img/bg1.jpeg',
-    '/img/bg5.jpeg',
-    '/img/bg6.jpeg',
-    '/img/banner-img.jpeg',
+    'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg1.jpeg',
+    'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg2.jpeg',
+    'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg5.jpeg',
+    'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg6.jpeg',
   ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
   bodyBgImgOpacity: 0.2, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
