@@ -23,6 +23,7 @@ module.exports = {
 
   bodyBgImg: [
     // https://img.xjh.me/random_img.php?ctype=acg&return=302&type=bg  神仙图片接口
+    '/img/bg11.jpg',
     'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg1.jpeg',
     'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg2.jpeg',
     'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg5.jpeg',
