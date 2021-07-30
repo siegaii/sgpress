@@ -31,7 +31,7 @@ export default {
           count = 0
         }
         this.bgImg = bodyBgImg[count]
-      }, 30000)
+      }, 1000 * 60)
     }
 
     if (bodyBgImgOpacity !== undefined) {

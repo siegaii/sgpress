@@ -37,6 +37,15 @@ module.exports = [
             link: '/pages/478dcc/'
           }
         ]
+      },
+      {
+        text: '工具',
+        items: [
+          {
+            text: '开源CDN jsdelivr',
+            link: '/pages/9ed0eb/'
+          }
+        ]
       }
     ]
   }
