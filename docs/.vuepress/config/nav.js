@@ -18,8 +18,12 @@ module.exports = [
         text: 'Node',
         items: [
           {
-            text: 'Node 架构',
+            text: '架构',
             link: '/pages/668df1/'
+          },
+          {
+            text: '基础',
+            link: '/pages/4a37a8/'
           }
         ]
       }
