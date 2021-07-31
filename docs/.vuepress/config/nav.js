@@ -48,10 +48,19 @@ module.exports = [
           {
             text: '开源CDN jsdelivr',
             link: '/pages/9ed0eb/'
-          },
+          }
+        ]
+      },
+      {
+        text: '移动端开发',
+        items: [
           {
             text: 'Mac调试ios web页',
             link: '/pages/21039e/'
+          },
+          {
+            text: '移动端H5键盘坑',
+            link: '/pages/17425e/'
           }
         ]
       }
