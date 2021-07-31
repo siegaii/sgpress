@@ -48,6 +48,10 @@ module.exports = [
           {
             text: '开源CDN jsdelivr',
             link: '/pages/9ed0eb/'
+          },
+          {
+            text: 'Mac调试ios web页',
+            link: '/pages/21039e/'
           }
         ]
       }
