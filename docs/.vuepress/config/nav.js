@@ -26,6 +26,19 @@ module.exports = [
             link: '/pages/4a37a8/'
           }
         ]
+      },
+      {
+        text: '小程序',
+        items: [
+          {
+            text: '小程序基础',
+            link: '/pages/a1a101/'
+          },
+          {
+            text: '微信小程序-1',
+            link: '/pages/41b633/'
+          }
+        ]
       }
     ]
   },
