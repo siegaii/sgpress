@@ -78,6 +78,6 @@ module.exports = [
         ]
       }
     ]
-  }
-  // { text: '日常', link: '/live/' }
+  },
+  { text: '日常', link: '/live/', items: [{ text: '深度和广度', link: 'pages/2c76d7/' }] }
 ]
