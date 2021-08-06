@@ -24,6 +24,10 @@ module.exports = [
           {
             text: '基础',
             link: '/pages/4a37a8/'
+          },
+          {
+            text: '全局属性',
+            link: '/pages/d20b6a/'
           }
         ]
       },
@@ -31,7 +35,7 @@ module.exports = [
         text: '小程序',
         items: [
           {
-            text: '小程序基础',
+            text: '基础',
             link: '/pages/a1a101/'
           },
           {
@@ -79,5 +83,14 @@ module.exports = [
       }
     ]
   },
-  { text: '日常', link: '/live/', items: [{ text: '深度和广度', link: 'pages/2c76d7/' }] }
+  {
+    text: '日常',
+    link: '/live/',
+    items: [
+      {
+        text: '深度和广度',
+        link: '/pages/2c76d7/'
+      }
+    ]
+  }
 ]
