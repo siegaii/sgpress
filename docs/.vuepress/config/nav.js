@@ -28,7 +28,11 @@ module.exports = [
           {
             text: '全局属性',
             link: '/pages/d20b6a/'
-          }
+          },
+          {
+            text: '核心模块-path',
+            link: '/pages/02b705/'
+          },
         ]
       },
       {
