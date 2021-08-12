@@ -43,7 +43,7 @@ module.exports = [
             link: '/pages/a1a101/'
           },
           {
-            text: '微信小程序-1',
+            text: '微信小程序-入门',
             link: '/pages/41b633/'
           }
         ]
