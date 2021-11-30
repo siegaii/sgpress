@@ -1,52 +1,29 @@
-name: CI
-
-on:
-  push:
+name: Publish And Deploy Demo
+on: # 此CI/CD触发时的事件
+  push: # 在代码提交时自动触发
     branches:
       - master
 
-env: # 设置环境变量
-  TZ: Asia/Shanghai # 时区（设置时区可使页面中的`最近更新时间`使用时区时间）
-
 jobs:
-  deploy-github-page: # 自定义名称
-    runs-on: ubuntu-latest # 运行在虚拟机环境ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-
-    steps:
-      - name: Checkout # 步骤1
-        uses: actions/checkout@v1 # 使用的动作。格式：userName/repoName。作用：检出仓库，获取源码。 官方actions库：https://github.com/actions
-      - name: Use Node.js ${{ matrix.node-version }} # 步骤2
-        uses: actions/setup-node@v1 # 作用：安装nodejs
-        with:
-          node-version: ${{ matrix.node-version }} # 版本
-      - name: run deploy.sh # 步骤3
-        env: # 设置环境变量
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-          CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
-        run: npm install && npm run deploy
-
-  deploy-tx:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
 
     # 部署到服务器
     - name: Deploy
-    uses: appleboy/ssh-action@master
-    with:
-      host: ${{ secrets.HOST }}
-      username: ${{ secrets.USERNAME }}
-      password: ${{ secrets.PASSWORD }}
-      port: ${{ secrets.PORT }}
-      script: |
-        cd /root/project
-        rm -rf *
-        git clone https://github.com/siegaii/sgpress.git
-        cd sgpress
-        npm install
-        npm build
-        cd ./docs/.vuepress/dist
-        mv ./docs/.vuepress/dist/* /var/www/html
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        script: |
+          cd /root/project
+          rm -rf *
+          git clone https://github.com/siegaii/sgpress.git
+          cd sgpress
+          npm install
+          npm build
+          cd ./docs/.vuepress/dist
+          mv ./docs/.vuepress/dist/* /var/www/html
+          
