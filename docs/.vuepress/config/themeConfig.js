@@ -58,7 +58,7 @@ module.exports = {
     // 博主信息，显示在首页侧边栏
     avatar: 'https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9mNGRkODQ4ZTBmNTc0OTU5OGI0NjU1ODdlY2M0YjdmMj9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.4SQlo39UkXb7Fr3muxLtQhFwx5GktuCM2FvVlkQsYO8',
     name: 'Siegaii',
-    slogan: '前端做题家'
+    slogan: ''
   },
   social: {
     // 社交图标，显示于博主信息栏和页脚栏

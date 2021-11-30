@@ -86,15 +86,11 @@ module.exports = [
         ]
       }
     ]
-  },
-  {
-    text: '日常',
-    link: '/live/',
-    items: [
-      {
-        text: '深度和广度',
-        link: '/pages/2c76d7/'
-      }
-    ]
   }
+  // {
+  //   text: '日常',
+  //   link: '/live/',
+  //   items: [
+  //   ]
+  // }
 ]
