@@ -2,7 +2,7 @@ name: Publish And Deploy Demo
 on: # 此CI/CD触发时的事件
   push: # 在代码提交时自动触发
     branches:
-      - master
+      - main
 
 jobs:
   build-and-deploy:
