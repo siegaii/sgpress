@@ -16,9 +16,9 @@ features: # 可选的
     details: 开发笔记、常见问题解法、常见坑
     link: /note/
     # imgUrl: /img/ui.png
-  - title: 技术文档
-    details: 技术文档、教程、技巧、总结
-    link: /technology/ # 可选
+  - title: 日常
+    details: 随笔，思考，日常
+    link: /live/ # 可选
     # imgUrl: /img/web.png # 可选
   # - title: 日常
   #   details: 读书笔记、随笔、日常复盘

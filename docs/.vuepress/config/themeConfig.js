@@ -1,12 +1,13 @@
-const nav = require('./nav.js');
-const htmlModules = require('./htmlModules.js');
+const nav = require('./nav.js')
+const htmlModules = require('./htmlModules.js')
 // const sidebar = require('./sidebar.js');
 
 // 主题配置
 module.exports = {
   nav,
   sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-  logo: 'img/siegaii.jpeg', // 导航栏logo
+  logo:
+    'https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9mNGRkODQ4ZTBmNTc0OTU5OGI0NjU1ODdlY2M0YjdmMj9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.4SQlo39UkXb7Fr3muxLtQhFwx5GktuCM2FvVlkQsYO8', // 导航栏logo
   repo: 'siegaii/sgpress', // 导航栏右侧生成Github链接
   searchMaxSuggestions: 10, // 搜索结果显示最大数
   lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
@@ -23,11 +24,11 @@ module.exports = {
 
   bodyBgImg: [
     // https://img.xjh.me/random_img.php?ctype=acg&return=302&type=bg  神仙图片接口
-    '/img/bg11.jpg',
-    'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg1.jpeg',
-    'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg2.jpeg',
-    'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg5.jpeg',
+    // '/img/bg11.jpg',
     'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg6.jpeg',
+    'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg1.jpeg'
+    // 'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg2.jpeg',
+    // 'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg5.jpeg'
   ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
   bodyBgImgOpacity: 0.2, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
@@ -51,13 +52,13 @@ module.exports = {
   author: {
     // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
     name: 'siegaii', // 必需
-    link: 'https://github.com/siegaii', // 可选的
+    link: 'https://github.com/siegaii' // 可选的
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: 'img/siegaii.jpeg',
+    avatar: 'https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9mNGRkODQ4ZTBmNTc0OTU5OGI0NjU1ODdlY2M0YjdmMj9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.4SQlo39UkXb7Fr3muxLtQhFwx5GktuCM2FvVlkQsYO8',
     name: 'Siegaii',
-    slogan: '最讲道理的程序',
+    slogan: ''
   },
   social: {
     // 社交图标，显示于博主信息栏和页脚栏
@@ -66,25 +67,25 @@ module.exports = {
       {
         iconClass: 'icon-youjian',
         title: '发邮件',
-        link: 'mailto:siiegaiii@gmail.com',
+        link: 'mailto:siiegaiii@gmail.com'
       },
       {
         iconClass: 'icon-github',
         title: 'GitHub',
-        link: 'https://github.com/siegaii',
-      },
+        link: 'https://github.com/siegaii'
+      }
       // {
       //   iconClass: 'icon-erji',
       //   title: '听音乐',
       //   link: 'https://music.163.com/#/playlist?id=755597173',
       // },
-    ],
+    ]
   },
   footer: {
     // 页脚信息
     createYear: 2021, // 博客创建年份
     copyrightInfo:
-      'Siegaii | <a href="https://github.com/siegaii/sgpress/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
-  },
+      'Siegaii | <a href="https://github.com/siegaii/sgpress/master/LICENSE" target="_blank">MIT License</a>' // 博客版权信息，支持a标签
+  }
   // htmlModules // 插入hmtl(广告)模块
 }
