@@ -18,7 +18,8 @@ jobs:
       uses: actions/setup-node@master
     - run: npm install
     - run: npm run build
-    - run: tar -zcvf release.tgz ./docs/.vuepress/dist
+    - run: cd ./docs/.vuepress/dist
+    - run: tar -zcvf release.tgz *
 
     # 发布 Release
     - name: Create Release
@@ -57,4 +58,5 @@ jobs:
           rm -rf *
           wget https://github.com/siegaii/sgpress/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
+          mv ./release/* ./
           
