@@ -57,5 +57,5 @@ jobs:
           rm -rf *
           wget https://github.com/siegaii/sgpress/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
-          mv ./release/docs/.vuepress/dist/* ./
+          mv /var/www/html/release/docs/.vuepress/dist/* /var/www/html/
 
