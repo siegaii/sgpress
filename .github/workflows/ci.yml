@@ -19,21 +19,16 @@ jobs:
     - run: npm install
     - run: npm run build
 
-    # 部署到服务器
-    - name: Deploy to Server
-      uses: burnett01/rsync-deployments@4.0
+    # 命名这个任务为发布Deploy
+    - name: Deploy
+      uses: cross-the-world/scp-pipeline@master
       env:
-          # 本地.ssh文件下的私钥id_rsa，存在secrets的TOKEN中
-          SSH_PRIVATE_KEY: ${{ secrets.P_TOKEN }} 
-          # 复制操作的参数。"-avzr --delete"意味部署时清空服务器目标目录下的文件
-          ARGS: "-avzr --delete" 
-          # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
-          SOURCE: "./docs/.vuepress/dist/" 
-          # 服务器域名
-          REMOTE_HOST: ${{ secrets.HOST }}
-          # 腾讯云默认用户名为root
-          REMOTE_USER: ${{ secrets.PORT }} 
-          # 目标目录
-          TARGET: "/var/wwww/html/" 
-          
-
+        WELCOME: "ssh scp ssh pipelines"
+        LASTSSH: "Doing something after copying"
+      with:
+        host: ${{ secrets.HOST }}
+        user: ${{ secrets.USERNAME }}
+        pass: ${{ secrets.PASSWORD }}
+        connect_timeout: 10s
+        local: './dist/.vuepress/dist'
+        remote: /var/www/html
