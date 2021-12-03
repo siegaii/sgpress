@@ -5,7 +5,7 @@ const htmlModules = require('./htmlModules.js')
 // 主题配置
 module.exports = {
   nav,
-  sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
+  sidebarDepth: 3, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
   logo:
     'https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9mNGRkODQ4ZTBmNTc0OTU5OGI0NjU1ODdlY2M0YjdmMj9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.4SQlo39UkXb7Fr3muxLtQhFwx5GktuCM2FvVlkQsYO8', // 导航栏logo
   repo: 'siegaii/sgpress', // 导航栏右侧生成Github链接
@@ -26,7 +26,7 @@ module.exports = {
     // https://img.xjh.me/random_img.php?ctype=acg&return=302&type=bg  神仙图片接口
     // '/img/bg11.jpg',
     'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg6.jpeg',
-    'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg1.jpeg'
+    // 'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg1.jpeg'
     // 'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg2.jpeg',
     // 'https://cdn.jsdelivr.net/gh/siegaii/siegaii-img@1.0/blog/backgroud/bg5.jpeg'
   ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
@@ -58,7 +58,7 @@ module.exports = {
     // 博主信息，显示在首页侧边栏
     avatar: 'https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9mNGRkODQ4ZTBmNTc0OTU5OGI0NjU1ODdlY2M0YjdmMj9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.4SQlo39UkXb7Fr3muxLtQhFwx5GktuCM2FvVlkQsYO8',
     name: 'Siegaii',
-    slogan: ''
+    slogan: '全栈工程师'
   },
   social: {
     // 社交图标，显示于博主信息栏和页脚栏
@@ -74,16 +74,11 @@ module.exports = {
         title: 'GitHub',
         link: 'https://github.com/siegaii'
       }
-      // {
-      //   iconClass: 'icon-erji',
-      //   title: '听音乐',
-      //   link: 'https://music.163.com/#/playlist?id=755597173',
-      // },
     ]
   },
   footer: {
     // 页脚信息
-    createYear: 2021, // 博客创建年份
+    createYear: 2020, // 博客创建年份
     copyrightInfo:
       'Siegaii | <a href="https://github.com/siegaii/sgpress/master/LICENSE" target="_blank">MIT License</a>' // 博客版权信息，支持a标签
   }

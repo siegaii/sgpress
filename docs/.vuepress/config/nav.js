@@ -29,25 +29,17 @@ module.exports = [
             text: '全局属性',
             link: '/pages/d20b6a/'
           },
-          {
-            text: '核心模块-path',
-            link: '/pages/02b705/'
-          },
         ]
       },
       {
-        text: '小程序',
+        text: '数据结构与算法',
         items: [
           {
-            text: '基础',
-            link: '/pages/a1a101/'
-          },
-          {
-            text: '微信小程序-入门',
-            link: '/pages/41b633/'
+            text: '线性表',
+            link: '/pages/f5f7be/'
           }
         ]
-      }
+      },
     ]
   },
   {
