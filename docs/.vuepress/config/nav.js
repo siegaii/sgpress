@@ -21,8 +21,30 @@ module.exports = [
     link: '/note/',
     items: [
       {
-        text: 'JSDelivr(免费 CDN) ',
-        link: '/pages/9ed0eb/'
+        text: '工具',
+        items: [
+          {
+            text: 'JSDelivr(免费 CDN) ',
+            link: '/pages/9ed0eb/'
+          },
+          {
+            text: 'Mac 调试 Web 页',
+            link: '/pages/21039e/'
+          },
+          {
+            text: 'NPM 版本号详解',
+            link: '/pages/478dcc/'
+          },
+        ]
+      },
+      {
+        text: '开发经验',
+        items: [
+          {
+            text: 'H5 键盘',
+            link: '/pages/17425e/'
+          }
+        ]
       }
     ]
   }
