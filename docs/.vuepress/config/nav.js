@@ -21,7 +21,7 @@ module.exports = [
     link: '/note/',
     items: [
       {
-        text: '开源CDN jsdelivr',
+        text: '开源 CDN JSDelivr',
         link: '/pages/9ed0eb/'
       }
     ]
