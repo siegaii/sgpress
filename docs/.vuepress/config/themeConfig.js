@@ -37,7 +37,7 @@ module.exports = {
   //   '图标地址1',
   //   '图标地址2'
   // ],
-  // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 => 方格 | 2 => 横线 | 3 => 竖线 | 4 => 左斜线 | 5 => 右斜线 | 6 => 点状
+  contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 => 方格 | 2 => 横线 | 3 => 竖线 | 4 => 左斜线 | 5 => 右斜线 | 6 => 点状
 
   // updateBar: { // 最近更新栏
   //   showToArticle: true, // 显示到文章页底部，默认true
@@ -78,7 +78,7 @@ module.exports = {
   },
   footer: {
     // 页脚信息
-    createYear: 2020, // 博客创建年份
+    createYear: 2019, // 博客创建年份
     copyrightInfo:
       'Siegaii | <a href="https://github.com/siegaii/sgpress/master/LICENSE" target="_blank">MIT License</a>' // 博客版权信息，支持a标签
   }

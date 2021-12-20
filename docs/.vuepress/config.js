@@ -7,7 +7,7 @@ module.exports = {
   theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
   title: "Siegaii's Blog",
-  description: 'Siegaii博客。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。',
+  description: 'Siegaii 博客。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github 等技术文章。',
   base: '/', // 格式：'/<仓库名>/'， 默认'/'
   markdown: {
     lineNumbers: true, // 代码行号
