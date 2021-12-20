@@ -6,7 +6,7 @@ module.exports = [
     link: '/technology/',
     items: [
       {
-        text: '数据结构与算法',
+        text: '数据结构',
         items: [
           {
             text: '线性表',
