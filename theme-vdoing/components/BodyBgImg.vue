@@ -50,10 +50,10 @@ export default {
   height: 100vh;
   width: 100vw;
   transition: background 0.5s;
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: #808080;
+  // -moz-filter: grayscale(100%);
+  // -ms-filter: grayscale(100%);
+  // -o-filter: grayscale(100%);
+  // filter: grayscale(100%);
+  // filter: #808080;
 }
 </style>

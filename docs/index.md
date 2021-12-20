@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: Siegaii's Blog
+heroText: SieGaii's Blog
 tagline: 天雨虽宽不润无根之草
 # actionText: 立刻进入 →
 # actionLink: /web/
