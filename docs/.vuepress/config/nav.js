@@ -47,42 +47,9 @@ module.exports = [
     link: '/note/',
     items: [
       {
-        text: 'NPM',
-        items: [
-          {
-            text: 'NPM package.json 版本号详解',
-            link: '/pages/478dcc/'
-          }
-        ]
-      },
-      {
-        text: '工具',
-        items: [
-          {
-            text: '开源CDN jsdelivr',
-            link: '/pages/9ed0eb/'
-          }
-        ]
-      },
-      {
-        text: '移动端开发',
-        items: [
-          {
-            text: 'Mac调试ios web页',
-            link: '/pages/21039e/'
-          },
-          {
-            text: '移动端H5键盘坑',
-            link: '/pages/17425e/'
-          }
-        ]
+        text: '开源CDN jsdelivr',
+        link: '/pages/9ed0eb/'
       }
     ]
   }
-  // {
-  //   text: '日常',
-  //   link: '/live/',
-  //   items: [
-  //   ]
-  // }
 ]
