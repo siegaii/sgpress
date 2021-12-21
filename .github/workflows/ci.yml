@@ -1,4 +1,4 @@
-name: Publish And Deploy Demo
+name: Publish And Deploy
 on: # 此CI/CD触发时的事件
   push: # 在代码提交时自动触发
     branches:
@@ -21,7 +21,7 @@ jobs:
 
     # 命名这个任务为发布Deploy
     - name: Deploy
-      uses: cross-the-world/scp-pipeline@master
+      uses: cross-the-world/ssh-scp-ssh-pipelines@master
       env:
         WELCOME: "ssh scp ssh pipelines"
         LASTSSH: "Doing something after copying"
