@@ -21,7 +21,7 @@ jobs:
 
     # 命名这个任务为发布Deploy
     - name: Deploy
-      uses: cross-the-world/scp-pipeline@master
+      uses: cross-the-world/ssh-scp-ssh-pipelines@master
       env:
         WELCOME: "ssh scp ssh pipelines"
         LASTSSH: "Doing something after copying"
