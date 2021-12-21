@@ -21,6 +21,15 @@ module.exports = [
     link: '/note/',
     items: [
       {
+        text: 'CI/CD',
+        items: [
+          {
+            text: 'Github Actions 实现 CI/CD',
+            link: '/pages/61ecaa/'
+          }
+        ]
+      },
+      {
         text: '工具',
         items: [
           {
