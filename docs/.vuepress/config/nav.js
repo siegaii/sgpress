@@ -6,6 +6,15 @@ module.exports = [
     link: '/technology/',
     items: [
       {
+        text: 'Node',
+        items: [
+          {
+            text: 'BFF-服务前端的后端',
+            link: '/pages/9e1019/'
+          }
+        ]
+      },
+      {
         text: '数据结构',
         items: [
           {
