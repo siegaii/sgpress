@@ -6,20 +6,15 @@ module.exports = [
     link: '/technology/',
     items: [
       {
-        text: 'Node',
-        items: [
-          {
-            text: 'BFF-服务前端的后端',
-            link: '/pages/9e1019/'
-          }
-        ]
-      },
-      {
-        text: '数据结构',
+        text: '数据结构与算法',
         items: [
           {
             text: '线性表',
             link: '/pages/f5f7be/'
+          },
+          {
+            text: 'LRU（最近最少使用缓存）',
+            link: '/pages/5ea4b1/'
           }
         ]
       },
