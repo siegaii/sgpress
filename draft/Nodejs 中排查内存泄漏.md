@@ -98,26 +98,36 @@
 4. 在调整完代码后重新进行了压测，问题解决。
 
 > Tips: Nodejs 中的`句柄`是一种指针，指向底层系统资源（如文件、网络连接等）。句柄允许 Node.js 程序访问和操作这些资源，而无需直接与底层系统交互。句柄可以是整数或对象，具体取决于 Node.js 库或模块使用的句柄类型。常见`句柄`:
-> + fs.open() 返回的文件句柄
-> + net.createServer() 返回的网络服务器句柄
-> + dgram.createSocket() 返回的 UDP socket 句柄
-> + child_process.spawn() 返回的子进程句柄
-> + crypto.createHash() 返回的哈希句柄
-> + zlib.createGzip() 返回的压缩句柄 
+> + `fs.open()` 返回的文件句柄
+> + `net.createServer()` 返回的网络服务器句柄
+> + `dgram.createSocket()` 返回的 UDP socket 句柄
+> + `child_process.spawn()` 返回的子进程句柄
+> + `crypto.createHash()` 返回的哈希句柄
+> + `zlib.createGzip()` 返回的压缩句柄 
 
 
 ## heapdump 分析总结
 通常很多人第一次拿到`堆快照`数据是懵的，我也是。在看了网上无数的分析技巧结合自身实战后总结了一些比较好用的技巧，一些基础的使用教程这里就不讲了。这里主要讲数据导入 `chrome` 后如何看图；
 
 ### Summary 视图
-![Summary 视图](./Summary%E8%A7%86%E5%9B%BE1.png)
+![Summary 视图](./Summary%E8%A7%86%E5%9B%BE.png)  
+
+看这个视图的时候一般会先对 Retained Size 进行排查，然后观察其中对象的大小与数量，有经验的工程师，可以快速判断出某些对象数量异常。在这个视图中除了关心自己定义的一些对象之外，
+一些容易发生内存泄漏的对象也需要注意如：
++ `TCP`
++ `Socket`
++ `EventEmitter`
++ `global`
+
+### Comparison 视图
+如果通过 `Summary` 视图, 不能定位到问题这时我们一般会使用 `Comparison` 视图。
 
 
 
-## 内存泄漏场景总结
+## 内存泄漏场景
 + 全局变量：全局变量不会被回收
 + 缓存：使用了内存密集型的第三方库如 `lru-cache` 存的太多就会导致内存不够用，在 Nodejs 服务中建议使用 `redis` 替代 `lru-cache`
-+ 句柄泄漏：调用完系统资源没有及时释放
++ 句柄泄漏：调用完系统资源没有释放
 + 事件监听
 + 闭包
 + 循环引用
@@ -135,46 +145,6 @@
 ## 其它
 + 压测工具：我使用的 wrk
 
-
-
-
-https://www.cnblogs.com/strick/p/16313530.html
-https://blog.csdn.net/pengpengzhou/article/details/106811717
-[Nodejs 性能监控](https://www.cnblogs.com/strick/p/16300059.html)
-https://www.oschina.net/translate/simple-guide-to-finding-a-javascript-memory-leak-in-node-js?cmp
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 一些概念
-### Nodejs 调试模式
-[Node 调试模式](https://nodejs.org/en/docs/guides/debugging-getting-started/)
-
-在启动 Node 时加入 --inspect 参数可以开启调试模式。
-
-### heapdump
-
-### V8 中的 GC
-
-> 手动触发 GC Node.js支持一个命令行选项 `--expose-gc`，该选项将向该 `global` 对象添加 `gc()` 函数，比如您可以这样执行您的代码：
-
-### 压测工具
-[压测介绍](https://www.cnblogs.com/goldsunshine/p/16607820.html)
-
-[wrk 使用](https://juejin.cn/post/6987391274508615694)
 
 + 文章类型：技术总结
 + 文章分类：代码人生
