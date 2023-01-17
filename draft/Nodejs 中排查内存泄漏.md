@@ -87,7 +87,7 @@
 ### 我的分析处理结果
 由于当时的对快照数据丢失了，我这里模拟一下当时的场景。  
 1. 通过 `grafana` 监控面看看到内存一直在涨一直下不来，但同时我也注意到，服务中的`句柄`数也在疯涨一直不掉。
-![DX 内存泄漏监控图2](./DX%20%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%8E%A7%E5%9B%BE.png)
+![DX 内存泄漏监控图2](./DX%20%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%8E%A7%E5%9B%BE2.png)
 
 2. 这是我回顾了一下出现泄漏的那一个月中新增的功能怀疑可能是在使用 `bull` 消息队列组件造成的内存泄漏。先去分析了相关应用代码，但并看不出那里写的有问题导致了内存泄漏,
 结合 1 中句柄泄漏的问题感觉是在使用 `bull` 后需要手动的去释放某些资源，在这个时候还不太确定具体原因。
@@ -106,27 +106,27 @@
 > + zlib.createGzip() 返回的压缩句柄 
 
 
-## heapdump 分析
+## heapdump 分析总结
 
 
 ## 总结
 1. 服务需要接入监控，方便第一时间确定问题类型
 2. 判断内存泄漏是全局性的还是局部性的
 3. 全局性内存泄漏使用二分法快速排查定位
+4. 局部内存泄漏  
+  a. 确定内存泄漏出现时间点，快速定位问题功能
+  b. 采堆快照数据，至少 3 次
+  c. 结合监控数据、堆快照数据、与出现泄漏事时间点内的新功能对内存泄漏点进行定位
 
 ## 其它
-+ 压测工具：我一般使用 wrk
++ 压测工具：我使用的 wrk
 
 
 
 
 https://www.cnblogs.com/strick/p/16313530.html
-
 https://blog.csdn.net/pengpengzhou/article/details/106811717
-
-
 [Nodejs 性能监控](https://www.cnblogs.com/strick/p/16300059.html)
-
 https://www.oschina.net/translate/simple-guide-to-finding-a-javascript-memory-leak-in-node-js?cmp
 
 
